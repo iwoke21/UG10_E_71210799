@@ -1,59 +1,18 @@
-#Test Case 1
+print("==== Kalkulator akar dan pangkat ====")
+print("Pilihan menu :")
+print("1. Pangkat 2 (Kuadrat)")
+print("2. Pangkat 3 (Kubik)")
+print("3. Akar kuadrat")
+menu = int(input("Masukan menu yang anda pilih : "))
 
-
-print("=== kalkulator akar dan pangkat ===")
-
-print("pilihan menu  : ")
-print("1. pangkat 2 (kuadrat)")
-print("2. pangkat 3 (kubik)")
-print("3. akar kuadrat")
-j = int(input("masukan menu yang anda pilih  : "))
-
-
-j = int(input("masukan bilangan yang ingin di pangkatkan  :"))
-print("hasil dari pemangkatan bilangan 3 dan 2 (kuadrat) adalah 9")
-
-
-#Test Case 2
-
-print("=== kalkulator akar dan pangkat ===")
-
-print("pilihan menu  : ")
-print("1. pangkat 2 (kuadrat)")
-print("2. pangkat 3 (kubik)")
-print("3. akar kuadrat")
-j = int(input("masukan menu yang anda pilih  : "))
-
-
-j = int(input("masukan bilangan yang ingin di pangkatkan  :"))
-print("hasil dari pemangkatan bilangan 4 dan 3 (kubik) adalah 64")
-
-
-#Test Case 3
-
-
-print("=== kalkulator akar dan pangkat ===")
-
-print("pilihan menu  : ")
-print("1. pangkat 2 (kuadrat)")
-print("2. pangkat 3 (kubik)")
-print("3. akar kuadrat")
-j = int(input("masukan menu yang anda pilih  : "))
-
-
-j = int(input("masukan bilangan yang ingin di pangkatkan  :"))
-print("hasil dari pemangkatan bilangan 9 adalah 0.3")
-
-
-#Test Case 4
-
-print("=== kalkulator akar dan pangkat ===")
-
-print("pilihan menu  : ")
-print("1. pangkat 2 (kuadrat)")
-print("2. pangkat 3 (kubik)")
-print("3. akar kuadrat")
-j = int(input("masukan menu yang anda pilih  : "))
-
-
-j = int(input("pilihan menu yang dimasukan tidak sesuai :"))
+if menu == 1:
+    kuadrat = int(input("\nMasukan bilangan yang ingin di pangkatkan : "))
+    print(f"Hasil dari pemangkatan bilangan {kuadrat} dengan 2 (Kuadrat) adalah {kuadrat*kuadrat}")
+elif menu == 2:
+    kuadrat = int(input("\nMasukan bilangan yang ingin di pangkatkan : "))
+    print(f"Hasil dari pemangkatan bilangan {kuadrat} dengan 3 (Kubik) adalah {kuadrat**3}")
+elif menu == 3:
+    kuadrat = int(input("\nMasukan bilangan yang ingin di akarkan : "))
+    print(f"Hasil akar kuadrat dari bilangan {kuadrat} adalah {kuadrat**0.5}")
+else:
+    print("\nPilihan menu yang di masukan tidak sesuai!")
